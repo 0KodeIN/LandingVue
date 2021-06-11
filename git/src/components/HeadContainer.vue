@@ -47,4 +47,22 @@ export default ({
   padding-top: 2.34vw;
  
 }
+@media (max-width:640px){
+ .salat_img{
+  display: none;
+ }
+ .head-text{
+  display: none;
+ }
+ .text_container2{
+  
+  font-size: 16px;
+  width: 39vw;
+ }
+.text_container{
+  
+  font-size: 24px;
+  width: 39vw;
+ }
+}
 </style>

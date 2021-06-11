@@ -1,31 +1,22 @@
 <template>  
   <nav class='header'>
-      <div class="header-text">Основы
-         <div class="radio">
-            <input type="radio" id="btn_1" name="btn"  value="1" checked onclick="scrollMenu('#btn1')">   
-            <label for="btn_1"></label>
-         </div>
-      </div>
-      <div class="header-text">Нормативы
-         <div class="radio">
-            <input type="radio" id="btn_2" name="btn"  value="2" checked onclick="scrollMenu('#btn2')">   
-            <label for="btn_2"></label>
-         </div>
-      </div>
-      <div class="header-text">Вопросы
-         <div class="radio">
-            <input type="radio" id="btn_3" name="btn"  value="3" checked onclick="scrollMenu('#btn3')">   
-            <label for="btn_3"></label>
-         </div>
-       </div>
-  </nav>
+      <a class="header-text" href="#btn1">Основы</a>
+      <a class="header-text" href="#btn2">Нормативы</a>
+      <a class="header-text" href="#btn3">Вопросы</a>
+  </nav> 
 </template>
 <script>
-export default ({    
+
+export default ({   
+  
 })
+
+
 </script>
 
 <style scoped>
+A:link { text-decoration: none;}
+A{ color: black;}
 .header{
   display: flex;
   justify-content: space-between;
@@ -60,10 +51,27 @@ export default ({
    width: 12px;
    height: 12px;
    border-radius: 50%;
-  background:white;
+   background:white;
 }
 
 .radio input[type="radio"]:checked + label::before{
   background: #FF5F33;
+}
+@media (max-width:640px){
+.header-text{
+  
+  font-size: 12px;
+  
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  margin-top: 2.928vw;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: flex-start;
+  width: 250px;
+}
 }
 </style>

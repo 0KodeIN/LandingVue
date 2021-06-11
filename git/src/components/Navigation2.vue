@@ -1,24 +1,26 @@
 <template>
-<div class="navigation2">{{text}}</div>
+<div id="btn2" class="navigation1">{{text}}</div>
 </template>
 <script>
 export default ({ 
-    props: ['text']  
+    props: ['text'] 
 })
 </script>
 <style scoped>
-.navigation2{    
-  margin-top: 0.58vw;
-  margin-left: auto;
-  margin-right: auto;
+.navigation1{
+  margin-top: 5.56vw;
+  color:#FF5F33;
   text-align: center;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.928vw;
+  font-size: 1.46vw;
   line-height: 120%;
-  padding-bottom: 2.928vw;
-  font-family: 'PT-Root-UI_Medium';
-  font-weight: 700;
-  width: 33vw;
+}
+@media (max-width:640px){
+.navigation1{
+  
+  font-size: 16px;
+  line-height: 140%;
+}
 }
 </style>

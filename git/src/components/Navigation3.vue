@@ -1,5 +1,5 @@
 <template>
-<div id="btn1" class="navigation1">{{text}}</div>
+<div id="btn3" class="navigation1">{{text}}</div>
 </template>
 <script>
 export default ({ 
